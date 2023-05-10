@@ -15,9 +15,6 @@ class Principal extends StatelessWidget {
         appBar: AppBar(
           backgroundColor:Colors.red[900],
               title: Text("Best Shopping"),
-              leading: IconButton(onPressed: () {
-                
-              }, icon: const Icon(Icons.menu)),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 15.0),
@@ -73,6 +70,44 @@ class Principal extends StatelessWidget {
           ],
           
           ),
+          drawer: Drawer(
+            child: SingleChildScrollView(child: 
+            Container(
+              
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 110,
+                    child: DrawerHeader(
+                      decoration: BoxDecoration( color: Colors.red[900]),
+                      
+                      child: Row(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage("assets/fotinha.png"),),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 30),
+                            child: Padding(
+                              padding: const EdgeInsets.only(left:20.0, top: 7),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Usuario"),
+                                  Text("usuario@gmail.com"),
+                                ],
+                              ),
+                            ),
+                          ),
+                        
+                        ],
+                      ),
+                    ),
+                  ),
+            
+                ],
+              ),
+            ),),
+          ),
+
       ),
     );
   }
