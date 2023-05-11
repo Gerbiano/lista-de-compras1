@@ -2,5 +2,5 @@ import 'package:flutter/material.dart';
 import 'telas/principal.dart';
 
 void main() {
-  runApp(const Principal());
+  runApp( Principal());
 }
