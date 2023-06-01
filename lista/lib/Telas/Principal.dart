@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lista/Telas/Despesas.dart';
+import 'package:lista/Telas/Lista1.dart';
 import 'package:lista/Telas/lembrete.dart';
-import 'package:lista/Telas/listadealimento2.dart';
+
 import 'package:lista/Telas/login.dart';
 
 class Principal extends StatelessWidget {
@@ -31,7 +32,7 @@ class Principal extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => login(),
+                      builder: (context) => Login(),
                     ),
                   );
                 },
@@ -142,7 +143,7 @@ class Principal extends StatelessWidget {
                     title: Text('Lembretes'),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Lembrete()));
+                          MaterialPageRoute(builder: (context) => Lembretes()));
                     },
                   ),
                   ListTile(
@@ -200,7 +201,7 @@ class Principal extends StatelessWidget {
                   child: FloatingActionButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Listaa()));
+                          MaterialPageRoute(builder: (context) => Lista()));
                     },
                     child: Icon(Icons.add),
                     backgroundColor: Colors.red[900],
