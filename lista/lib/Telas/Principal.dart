@@ -10,9 +10,9 @@ class Principal extends StatelessWidget {
   final tit = "Lista";
   final titulo = "Best Shopping";
   List<BottomNavigationBarItem> itens = [
-    BottomNavigationBarItem(
+     BottomNavigationBarItem(
         label: 'carrinho', icon: Icon(Icons.shopping_cart_sharp)),
-    BottomNavigationBarItem(label: 'Total', icon: Icon(Icons.calculate)),
+     BottomNavigationBarItem(label: 'Total', icon: Icon(Icons.calculate)),
   ];
 
   @override
@@ -46,7 +46,7 @@ class Principal extends StatelessWidget {
                 itemBuilder: (context) => [
                   PopupMenuItem(
                     child: Row(
-                      children: [
+                      children: const [
                         Padding(
                           padding: const EdgeInsets.only(right: 15),
                           child: Icon(

@@ -22,9 +22,9 @@ class LoginPage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 46, 46, 46),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 80),
-            child: const Text(
+         const Padding(
+            padding:  EdgeInsets.only(top: 80),
+            child:  Text(
               'Crie sua conta',
               style: TextStyle(fontSize: 35, color: Colors.white),
             ),
